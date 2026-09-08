@@ -51,13 +51,14 @@ tmp/
 
 # Generated 3D point cloud exports (large outputs)
 room_cylindrical.ply
-room_zoedepth.ply
 *.ply
+!room_zoedepth.ply
 !examples/*.ply
 
 # Generated intermediate panorama previews (optional)
 stitched_panorama.jpg
 cropped_panorama.jpg
+!assets/*
 
 # Operating System Files
 .DS_Store

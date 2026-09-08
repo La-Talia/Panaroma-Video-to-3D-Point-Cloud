@@ -29,6 +29,29 @@ We investigate and contrast two monocular depth estimation paradigms:
 
 ---
 
+## 🌟 Visual Results: 3D Point Cloud Glimpse
+
+<div align="center">
+  <img src="assets/point_cloud_3d.gif" alt="Rotating 3D Point Cloud Reconstruction" width="620px" />
+  <p><em>Figure 1: 360° Rotating interactive preview of the metric 3D point cloud reconstructed using ZoeDepth (ZoeD_N).</em></p>
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="assets/reconstruction_showcase.png" alt="Reconstruction Multi-View Showcase" width="100%" />
+  <p><em>Figure 2: <strong>Top:</strong> Input stitched 2D panoramic room mosaic (1774 × 712). <strong>Bottom:</strong> Multi-view 3D projections in physical metric space (Perspective 3D room volume, Frontal elevation, and Top-Down floor plan with true scale in metres).</em></p>
+</div>
+
+### 📊 Metric Geometry Properties (`room_zoedepth.ply`)
+- **Total Reconstructed 3D Points**: **907,311 vertices** with dense RGB color attributes.
+- **Physical Room Width ($X$)**: $-3.32\text{ m} \to +2.16\text{ m}$ (**$\approx 5.48\text{ metres}$** wide).
+- **Physical Room Depth ($Z$)**: $+0.88\text{ m} \to +5.28\text{ m}$ (**$\approx 4.40\text{ metres}$** deep).
+- **Physical Room Height ($Y$)**: $-1.34\text{ m} \to +1.51\text{ m}$ (**$\approx 2.85\text{ metres}$** floor-to-ceiling).
+- **Scale Grounding**: Metric physical units (metres), fine-tuned on NYU Depth v2.
+
+---
+
 ## 🏛️ Pipeline Architecture
 
 Both methods follow a unified, single-shot panoramic back-projection workflow:
@@ -119,8 +142,13 @@ Where $\alpha = 1.5$ for ZoeDepth and $\alpha = 2.0$ for Depth Anything V2.
 ├── depth-estimation-comparison.docx # Original research paper manuscript (.docx)
 ├── requirements.txt                 # Python dependencies
 ├── pipeline.py                      # Standalone CLI 3D reconstruction pipeline
+├── assets/                          # Preview animations, showcase graphics & figures
+│   ├── point_cloud_3d.gif           # 360-degree rotating 3D preview
+│   ├── reconstruction_showcase.png  # Multi-view composite reconstruction graphic
+│   └── stitched_panorama.jpg        # Extracted 2D panoramic mosaic
 ├── zoedepth.ipynb                   # Colab/Jupyter notebook: ZoeDepth metric pipeline
 ├── depth.ipynb                      # Colab/Jupyter notebook: Depth Anything V2 pipeline
+├── room_zoedepth.ply                # Reconstructed metric 3D point cloud (~907k vertices)
 └── sample.mp4                       # Sample indoor panoramic room video (~3.9 MB)
 ```
 
@@ -130,8 +158,8 @@ Where $\alpha = 1.5$ for ZoeDepth and $\alpha = 2.0$ for Depth Anything V2.
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/<your-username>/2dto3d.git
-cd 2dto3d
+git clone https://github.com/La-Talia/Panaroma-Video-to-3D-Point-Cloud.git
+cd Panaroma-Video-to-3D-Point-Cloud
 ```
 
 ### 2. Create Virtual Environment
