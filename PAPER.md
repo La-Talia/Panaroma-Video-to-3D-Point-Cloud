@@ -1,8 +1,8 @@
 # A Comparative Study of Relative and Metric Monocular Depth Estimation for Video-Based Indoor 3D Reconstruction
 
-**Author:** Rax  
-**Affiliation:** Department of Computer Vision and 3D Reconstruction, Indian Institute of Technology (Indian School of Mines), Dhanbad  
-**Date:** September 2026  
+**Author:** Raxit Gupta 
+**Affiliation:** Department of Civil Engineering, Indian Institute of Technology (Indian School of Mines), Dhanbad  
+**Date:** September 2026
 **Document:** [depth-estimation-comparison.docx](depth-estimation-comparison.docx)
 
 ---
