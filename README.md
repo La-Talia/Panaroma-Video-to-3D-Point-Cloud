@@ -32,15 +32,8 @@ We investigate and contrast two monocular depth estimation paradigms:
 ## 🌟 Visual Results: 3D Point Cloud Glimpse
 
 <div align="center">
-  <img src="assets/point_cloud_3d.gif" alt="Rotating 3D Point Cloud Reconstruction" width="620px" />
-  <p><em>Figure 1: 360° Rotating interactive preview of the metric 3D point cloud reconstructed using ZoeDepth (ZoeD_N).</em></p>
-</div>
-
-<br/>
-
-<div align="center">
   <img src="assets/reconstruction_showcase.png" alt="Reconstruction Multi-View Showcase" width="100%" />
-  <p><em>Figure 2: <strong>Top:</strong> Input stitched 2D panoramic room mosaic (1774 × 712). <strong>Bottom:</strong> Multi-view 3D projections in physical metric space (Perspective 3D room volume, Frontal elevation, and Top-Down floor plan with true scale in metres).</em></p>
+  <p><em><strong>Top:</strong> Input stitched 2D panoramic room mosaic (1774 × 712). <strong>Bottom:</strong> Multi-view 3D projections in physical metric space (Perspective 3D room volume, Frontal elevation, and Top-Down floor plan with true scale in metres).</em></p>
 </div>
 
 ### 📊 Metric Geometry Properties (`room_zoedepth.ply`)
@@ -142,8 +135,7 @@ Where $\alpha = 1.5$ for ZoeDepth and $\alpha = 2.0$ for Depth Anything V2.
 ├── depth-estimation-comparison.docx # Original research paper manuscript (.docx)
 ├── requirements.txt                 # Python dependencies
 ├── pipeline.py                      # Standalone CLI 3D reconstruction pipeline
-├── assets/                          # Preview animations, showcase graphics & figures
-│   ├── point_cloud_3d.gif           # 360-degree rotating 3D preview
+├── assets/                          # Showcase graphics & figures
 │   ├── reconstruction_showcase.png  # Multi-view composite reconstruction graphic
 │   └── stitched_panorama.jpg        # Extracted 2D panoramic mosaic
 ├── zoedepth.ipynb                   # Colab/Jupyter notebook: ZoeDepth metric pipeline
