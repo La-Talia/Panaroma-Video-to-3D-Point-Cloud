@@ -238,21 +238,11 @@ The generated `.ply` files can be opened in any standard 3D viewer:
 
 ---
 
-## 📄 Academic Paper
+## 📄 Documentation
 
 The accompanying paper detailing this research is included in both Word and Markdown formats:
 - 📄 **Markdown**: [PAPER.md](PAPER.md)
 - 📝 **Word Document**: [depth-estimation-comparison.docx](depth-estimation-comparison.docx)
 
-### Citation
-```bibtex
-@article{rax2026depthcomparison,
-  title={A Comparative Study of Relative and Metric Monocular Depth Estimation for Video-Based Indoor 3D Reconstruction},
-  author={Rax},
-  affiliation={Department of Computer Vision and 3D Reconstruction, Indian Institute of Technology (Indian School of Mines), Dhanbad},
-  year={2026},
-  month={September}
-}
-```
 
 ---
